@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://wallpaperaccess.com/full/254381.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.flights-container {
+  padding: 20px;
+  background: url('https://wallpaperaccess.com/full/254381.jpg') no-repeat center center fixed;
+}
+
+.flights-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+  
+}
+
+.flight-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flight-card {
+  flex: 0 0 calc(25% - 20px); /* Adjust width to fit four cards in a row with spacing */
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-card:hover {
+  transform: translateY(-5px); /* Example hover effect */
+}
+
+.flight-image {
+  width: 50%;
+  height: 80%; /* Adjust height as needed */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.flight-image img {
+  width: 100%;
+  height: auto;
+}
+
+.flight-details {
+  text-align: left;
+}
+
+.flight-card h3 {
+  margin-top: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flight-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+
+.flight-card button:hover {
+  background-color: #45a049;
+}

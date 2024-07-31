@@ -1,0 +1,114 @@
+
+.payment-container {
+    background-image: url('https://www.traveldailymedia.com/assets/2019/08/Photo-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .payment-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-container form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .payment-container label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .payment-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjusting for padding and border */
+  }
+  
+  .payment-container input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .payment-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .alternative-payments {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .alternative-payments h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .gpay-button {
+    background-color: #4285F4;
+    color: #fff;
+  }
+  
+  .gpay-button:hover {
+    background-color: #357ae8;
+  }
+  
+  .phonepe-button {
+    background-color: #5f259f;
+    color: #fff;
+  }
+  
+  .phonepe-button:hover {
+    background-color: #4e1f7d;
+  }
+  

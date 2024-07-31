@@ -1,0 +1,38 @@
+<!-- cart.component.html -->
+
+<div *ngFor="let flight of flights" class="card">
+  <div class="card-body">
+    <img class="card-img" [src]="flight.imageUrl" alt="Flight Image">
+    <div class="flight-details">
+      <h5 class="card-title">{{ flight.name }}</h5>
+      <div class="flight-info">
+        <span>Departure Date: {{ flight.departureDate }}</span>
+      </div>
+      <div class="flight-info">
+        <span>Price: ${{ flight.price }}</span>
+      </div>
+      <div class="flight-info">
+        <span>Passengers: {{ flight.passengers }}</span>
+      </div>
+      <div class="flight-info">
+        <span>From: {{ flight.departure }}</span>
+        <span>To: {{ flight.destination }}</span>
+      </div>
+      <div class="flight-info">
+        <span>Departure Time: {{ flight.departureTime }}</span>
+        <span>Airline: {{ flight.airline }}</span>
+      </div>
+      <div>
+        <button (click)="bookFlight(flight)" class="btn btn-primary">Book Now</button>
+        <button (click)="removeFlight(flight)" class="btn btn-danger">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="flights.length === 0" class="alert alert-info" role="alert">
+  Your cart is empty.
+</div>
+
+<button *ngIf="flights.length > 0" (click)="goToPayment()" class="btn btn-success proceed-btn">Proceed to Payment</button>
+<a routerLink="/flights" class="btn btn-secondary continue-shopping">Continue Shopping</a>

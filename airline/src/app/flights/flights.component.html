@@ -1,0 +1,23 @@
+<div class="flights-container">
+  <h2>Available Flights</h2>
+  <div class="flight-row">
+    <div *ngFor="let flight of flights" class="flight-card">
+      <div class="flight-image">
+        <img [src]="flight.image" alt="{{ flight.name }}">
+      </div>
+      <div class="flight-details">
+        <h3>{{ flight.name }}</h3>
+        <p><strong>Departure:</strong> {{ flight.departure }}</p>
+        <p><strong>Destination:</strong> {{ flight.destination }}</p>
+        <p><strong>Airline:</strong> {{ flight.airline }}</p>
+        <p><strong>Departure Time:</strong> {{ flight.departureTime }}</p>
+        <p><strong>Duration:</strong> {{ flight.duration }}</p>
+        <p><strong>Price:</strong> ₹{{ flight.price }}</p>
+        <div class="button-container">
+          <button (click)="addToCart(flight)">Add to Cart</button>
+          <button (click)="bookNow(flight)">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

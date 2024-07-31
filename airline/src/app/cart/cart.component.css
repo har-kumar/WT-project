@@ -1,0 +1,68 @@
+/* cart.component.css */
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background-image: url('https://wallpaperaccess.com/full/1264507.jpg'); /* Add your background image URL here */
+  background-size: cover; /* Ensure the background image covers the entire card */
+  background-position: center; /* Center the background image */
+  border-radius: 10px; /* Add rounded corners */
+  overflow: hidden; /* Ensure content does not overflow */
+  color: white; /* Change text color to ensure it contrasts with the background image */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Add padding inside the card */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay to improve text readability */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.flight-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.flight-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.flight-info span {
+  margin-left: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.alert-info {
+  margin-top: 20px;
+}
+
+.proceed-btn {
+  margin-top: 20px;
+}
+
+.continue-shopping {
+  margin-top: 20px;
+}

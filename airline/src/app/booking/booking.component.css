@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 251, 251, 0.95); /* Adjust opacity to make it less transparent */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.booking-container button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.booking-container button[type="submit"]:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.booking-summary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e9ffe9;
+  border: 1px solid #b2f2b2;
+  border-radius: 5px;
+}
+
+.booking-summary h3 {
+  margin: 0 0 10px 0;
+}
+
+.booking-summary pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.sriggle.tech/kantents/production/1/1345/06/ce100e07-fc5b-485e-8cd3-45f74d02f45f.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+ 
+}

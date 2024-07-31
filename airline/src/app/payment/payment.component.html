@@ -1,0 +1,32 @@
+<div class="payment-container">
+  <h2>Payment</h2>
+  <form (ngSubmit)="paynow()">
+    <label for="cardNumber">Card Number:</label>
+    <input type="number" id="cardNumber" name="cardNumber" required>
+    
+    <label for="expiry">Expiry Date:</label>
+    <input type="date" id="expiry" name="expiry" required>
+    
+    <label for="cvv">CVV:</label>
+    <input type="number" id="cvv" name="cvv" required>
+    
+    <button class="paynow-button" (click)="paynow()">Pay Now</button>
+  </form>
+
+  <div *ngIf="paymentSuccess" class="payment-success">
+    <p>Payment successful!</p>
+  </div>
+
+  <div class="alternative-payments">
+    <h3>Or pay with:</h3>
+    <div class="qr-code">
+      <img src="\assets\Qr.png" alt="QR Code">
+      <p>Scan to pay</p>
+    </div>
+    <div class="payment-buttons">
+
+      <button class="gpay-button" (click)="payWithGPay()">Pay with GPay</button>
+      <button class="phonepe-button" (click)="payWithPhonePe()">Pay with PhonePe</button>
+    </div>
+  </div>
+</div>

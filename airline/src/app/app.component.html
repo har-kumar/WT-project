@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Example</title>
+  <style>
+    /* CSS styles */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    a[routerLink] {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    a[routerLink]:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    a[routerLink]:active {
+      background-color: #004085;
+      transform: scale(0.95);
+    }
+
+    a[routerLink].active {
+      background-color: #28a745;
+    }
+
+    a[routerLink].home-active {
+      background-color: #ff6347;
+      font-weight: bold;
+    }
+
+    router-outlet {
+      display: block;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a routerLink="home" class="home-active">HOME</a>
+    <a routerLink="flights">FLIGHTS</a>
+    <a routerLink="booking">BOOK A TICKET</a>
+    <a routerLink="payment">MAKE A PAYMENT</a>
+    <a routerLink="cart">CART</a> 
+  </div>
+  <router-outlet></router-outlet>
+</body>
+</html>

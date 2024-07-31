@@ -1,0 +1,67 @@
+<!-- home.component.html -->
+<div class="home-container">
+  <nav class="navbar">
+    <a routerLink="/" class="nav-link">
+      <i class="fas fa-home"></i>
+      Home
+    </a>
+    <a routerLink="/flights" class="nav-link">
+      <i class="fas fa-plane"></i>
+      Flights
+    </a>
+    <a routerLink="/booking" class="nav-link">
+      <i class="fas fa-ticket-alt"></i>
+      Book a Ticket
+    </a>
+    <a routerLink="/payment" class="nav-link">
+      <i class="fas fa-credit-card"></i>
+      Payment
+    </a>
+  </nav>
+  <div class="content">
+    <h1>Welcome to our Flight Booking System</h1>
+    <p>Find the best deals and book your flights hassle-free!</p>
+    <a routerLink="/flights" routerLinkActive="active" class="view-flights-btn">View Available Flights</a>
+    
+    <!-- New Sections Added Below -->
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+      <div class="feature">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Best Price Guarantee</h3>
+        <p>We offer the best prices for your flight bookings with exclusive discounts and deals.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Customer Support</h3>
+        <p>Our customer support team is available round the clock to assist you with your booking needs.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-plane-departure"></i>
+        <h3>Wide Range of Flights</h3>
+        <p>Choose from a wide range of airlines and destinations to suit your travel needs.</p>
+      </div>
+    </section>
+    
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <p>"The booking process was seamless and I got a great deal on my flight!"</p>
+        <h4>- John Doe</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Excellent customer service and the best prices I could find. Highly recommend!"</p>
+        <h4>- Jane Smith</h4>
+      </div>
+    </section>
+    
+    <section class="subscribe">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay updated with the latest deals and offers. Enter your email to subscribe:</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </div>
+</div>
